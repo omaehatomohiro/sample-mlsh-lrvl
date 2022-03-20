@@ -51,15 +51,35 @@
                             <div class="flex items-center">
                                 <input id="search" type="text">
                             </div>
-                            <input id="search" type="text">
+
+                            <form method="POST" action="{{route('user.add')}}">
+                                @csrf
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="name" class="form-control-plaintext" id="staticEmail" value="your name">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" name="email" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                  <input type="password" name="password" class="form-control" id="inputPassword">
+                                </div>
+                              </div>
+                              <button type="submit">Sned</button>
+                            </form>
                         </div>
 
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                             <div class="flex items-center">
                                 <div id="results"></div>   
                             </div>
-
-
                         </div>
                     </div>
                 </div>
