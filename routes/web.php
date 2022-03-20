@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::post('/add', [UserController::class,'add'])->name('user.add');
+
+Route::get('/test1', [UserController::class,'test1'])->name('user.test1');
