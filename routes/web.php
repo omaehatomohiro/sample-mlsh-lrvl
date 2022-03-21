@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home');
 });
 
 Route::post('/add', [UserController::class,'add'])->name('user.add');

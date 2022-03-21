@@ -20,7 +20,7 @@ class UserController extends Controller
     public function test1(){
         $user = User::first();
         $user->name = 'ok';
-        // $user->save();
+        //$user->save();
         
         /**
          * update only meliesearch db
